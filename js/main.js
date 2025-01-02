@@ -6,7 +6,7 @@ $(document).ready(function(){
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        initialSlide: 10
+        initialSlide: 0
     });
 
     /* var $slider = $('.slider-fechas').slick({
