@@ -1,0 +1,690 @@
+html, 
+body{
+    box-sizing: border-box;    
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-medium-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-black-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/fonts/poppins-black-webfont.woff') format('woff');
+}
+
+.interior{
+    background-color: #052a40;
+}
+.clear{
+    clear: both;
+}    
+                
+.box-cabecera{
+  
+}
+    #videoBG{
+        height: auto;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    @media (min-aspect-ratio: 16/9){
+        #videoBG{
+            height: auto;
+            width: 100%;
+        }
+    }
+    @media (max-aspect-ratio: 16/9){
+        #videoBG{
+            height: 100%;
+            width: auto;
+        }
+    }
+    @media (max-width: 767px){
+        #videoBG{
+            /*display: none;*/
+            height: 100%;
+            width: auto;
+        }
+        .box-cabecera{
+            background: url('/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/poster-video.jpg');
+            background-size: cover;
+        }
+    }
+  
+
+.main{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+    position: relative;
+}
+    .ctn-main{
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+        .box-titulo{
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 200px 20px 0 0;            
+            vertical-align: bottom;
+        }
+            .box-titulo h1{
+                color: #ffde00;
+                margin: 20px auto;
+                padding: 20px 0 0;
+            }
+            .box-titulo a{
+                border: 1px solid #fff;
+                border-radius: 32px;
+                color: #fff;
+                display: block;
+                font: 16px/32px 'poppinslight';
+                max-width: 150px;
+                padding: 5px;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+                .box-titulo a:hover{
+                    background-color: #ffde00;
+                    color: #240a53;
+                }
+        .btn-menu{
+            border-top: 1px solid #ffde00;
+            cursor: pointer;
+            max-width: 400px;
+            position: relative;
+            top: 20px;
+            z-index: 300;
+        }       
+            .btn-menu p{
+                color: #fff;
+                font: 14px/17px 'poppinsmedium' !important;
+                margin-bottom: 0 !important;
+                max-width: 100% !important;
+                text-transform: uppercase;
+            } 
+                .btn{
+                    border: 1px solid #fff;
+                    border-radius: 32px;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font: 14px/17px 'poppinsmedium' !important;
+                    margin: 10px 5px;
+                    padding: 15px 40px;
+                    text-transform: uppercase;
+                    vertical-align: top;
+                }
+                    .btn:hover{
+                        background-color: #ffde00;
+                        color: #240a53;
+                    }
+                .btn-menu p span{
+                    border: 1px solid #fff;
+                    border-radius: 32px;
+                    display: block;
+                    margin: 10px 0;
+                    padding: 15px 25px;
+                }
+                    .active-menu{
+                        color: red;
+                    }
+            .box-opciones{
+
+            }   
+                .box-opciones .btn-menu{
+                    border-top: none;
+                    float: right;
+                    margin-right: 50px;
+                }     
+
+    .main h1{
+        font: 70px/1 'poppinsblack';
+        width: 100%;
+    }
+        .main h1 span{
+            color: #fff;
+        }
+    .main h2{
+        font: 1.2em/1.2 'actobook';
+        margin: 20px auto;
+        max-width: 550px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        margin-top: 40vh;
+    }
+    .main h3{
+        color: #000;
+        font: 18px/1.2  "GuardianEgyp-Light";
+        margin: 0 auto 10px;
+        max-width: 800px;
+        padding: 0;
+        text-align: center;
+    }
+    .main h4{
+        font: 26px/1.3 "GuardianTextEgypt-Black";
+        margin: 0 auto;
+        max-width: 600px;        
+    }
+    .main h5{
+        color: #FA4B73;        
+        margin: 0 auto;
+        text-align: center;
+    }
+        h5.mes{
+            color: #ffde00;
+            font: 60px/1 'poppinsblack';
+            padding-top: 20px;
+            text-align: left;
+            background: #052a40;
+            /*position: fixed;*/
+            width: 100%;
+            z-index: 200;
+        }
+
+    .main p{
+        font: 18px/1.4 "GuardianEgyp-Regular";
+        max-width: 570px;
+        margin: 20px auto;
+        text-align: left;
+    }  
+    .main h6{  
+        font: 1em/1.2 'poppinsbold';
+        margin: 0 auto;
+    }
+
+.box-main-buscador{
+    background-color: #fff;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+}
+    #box-main-buscador-fechas{
+        padding-top: 30px;
+    }
+    .ctn-buscador{
+        margin: 0 auto;
+        max-width: 1024px;
+        position: relative;
+    }
+        .barra-buscador{
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 30px 0;
+            text-align: center;
+        }
+            .barra-buscador span,
+            .box-fecha span{
+                color: #a6a2a2;
+                display: block;
+                font: 13px/1.2 'poppinsmedium';
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .barra-buscador input{
+                border: 1px solid #c2c2c2;
+                border-radius: 32px;
+                box-sizing: border-box;
+                display: block;
+                margin-top: 20px;
+                padding: 10px;
+                width: 100%;
+            }
+        .box-fecha{
+            margin: 0 auto;
+            max-width: 500px;
+        }   
+            .slider{
+                margin-top: 20px;
+            } 
+                .slider h5{
+                    color: #fd5e53;
+                    font: 18px/1.2 'poppinsmedium';
+                    margin: 0 auto;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+            .slider .slick-next {
+                border: none; 
+                border-radius: 6px !important;
+                height: 30px;
+                /* color: #fff; */
+                /* cursor: pointer; */
+                padding: 10px;
+                right: 0;
+                /* z-index: 20; */  
+                width: 30px;
+                
+                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/der-calendario.png) no-repeat;
+                background-size: 100%;
+            }
+            .slider .slick-prev{
+                border: none; 
+                border-radius: 6px !important;
+                height: 30px;
+                left: -25px;
+                padding: 10px;
+                right: inherit;
+                width: 30px;
+
+                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/izq-calendario.png) no-repeat;
+                background-size: 100%;
+            }  
+                .slider .slick-next:before {
+                    color: #fd5e53;
+                    content: ' ';                   
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/der-calendario.png) no-repeat;
+                    background-size: 100%;
+                    width: 30px;
+                    display: block;
+                    height: 30px;
+                    margin-left: -10px;
+                    margin-top: -10px;
+                }
+                .slider .slick-prev:before {
+                    color: #fd5e53;
+                    content: ' ';                   
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/izq-calendario.png) no-repeat;
+                    background-size: 100%;
+                    width: 30px;
+                    display: block;
+                    height: 30px;
+                    margin-left: -10px;
+                    margin-top: -10px;
+                }  
+
+
+        .slider-fechas{
+            /*padding-top: 100px;*/
+        }      
+            .slider-fechas .slick-slide{
+                text-align: left;
+            }
+            .slider-fechas h6{
+                color: #fff;
+                font-size: 30px;
+                text-align: left;
+            }  
+            .slider-fechas .slick-prev{
+                position: fixed;
+                right: 280px;
+            }
+            .slider-fechas .slick-next{
+                position: fixed;
+                right: 110px;
+            }
+        
+        .box-artista{
+            border-bottom: 1px solid #ffde00;
+            display: inline-block;
+            max-width: 500px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            vertical-align: top;
+        }
+            .box-artista h4{
+                color: #fff;
+                font: 28px/1.2 'poppinsmedium';
+            }
+                .box-artista h4 span{
+                    color: #FA4B73;
+                }
+            .box-info-artista{
+                border-top: 1px solid #fff;
+                display: inline-block;
+                margin-left: 20px;
+                max-width: 200px;
+                vertical-align: bottom;                
+            }
+                .box-info-artista p{
+                    color: #fff;
+                    font: 18px/1.2 'poppinslight';
+                }
+                    .box-info-artista p.hora{
+                        color:  #fd5e53;
+                    }
+                    .box-info-artista img{
+                        display: inline-block;
+                        max-width: 160px;
+                    }
+        
+        .iframe{
+            display: inline-block;
+            max-width: 250px;
+            vertical-align: top;
+        }
+            .iframe video{
+                border-radius: 20px;
+                box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+                width: 100%;
+            }
+        .youtube-video{
+            height: 400px;
+            width: 220px;
+        }
+
+
+        ul#artistas{
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+            ul#artistas li{
+                display: none;
+                display: inline-block;
+                margin: 10px;
+                max-width: 200px;
+                text-align: center;
+                vertical-align: top;
+            }
+                ul#artistas img{
+                    border-radius: 10px;
+                }
+                ul#artistas li h4{
+                    color: #fd5e53;
+                    font: 15px/1.2 'poppinsblack';
+                    margin: 5px auto;
+                }
+                    ul#artistas li h4 a{
+                        color: #fd5e53;
+                    }
+
+            .slick-list {
+                text-align: center !important;
+                margin: 0 auto !important;
+                /*max-width: 285px !important;*/
+            }  
+            
+        a.btn-home{           
+            border-radius: 25px;
+            display: block;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            transition: all .2s ease-in-out;            
+            top: 70px;
+            width: 40px;
+            z-index: 200;
+        }    
+            a.btn-home:hover{
+                /*height: 30px;
+                width: 30px;*/
+                /*transform: scale(1.1);*/
+            }
+        #ultimo{
+            position: relative;
+        }
+        a.btn-mes{
+            background: #ffde00;
+            border-radius: 32px;
+            /*bottom: 100px;*/
+            color: #240a53;
+            display: block; 
+            font: 15px/1.2 'poppinsblack';
+            padding: 10px 30px;
+            position: absolute;
+            right: 0;       
+            text-decoration: none;
+            text-transform: uppercase;     
+        }
+
+.btn-cerrar{
+    cursor: pointer;
+    max-width: 30px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.header-interior{
+    background: #1a3175;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+.tg{
+    border-color: #f2f2f2 !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid;
+    margin: 0 auto;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-zv4m{
+    border-color:#ffffff;
+    text-align:left;
+    vertical-align:top
+}
+.tg .tg-8jgo{
+    border-color:#ffffff;
+    text-align:center;
+    vertical-align:top
+}
+.tg thead tr th{
+    font-family: 'poppinsbold';
+    text-transform: uppercase;
+}
+.tg tbody tr td{
+    font-family: 'poppinslight';
+}
+td a{
+    background: #fd5e53;
+    border-radius: 10px;
+    color: #fff;
+    display: block; 
+    height: 20px;
+    text-decoration: none;
+    width: 30px;
+}
+
+.no-border{
+    border: none;
+}
+.results-container{
+    display: block !important;
+}
+
+@media only screen and (max-width: 640px){
+
+     
+    .main h1{
+        font-size: 3rem;
+    }
+    .main h2{
+        
+    }
+    h5.mes{
+        padding-left: 15px;
+        position: inherit;
+    }
+    .box-titulo{
+        margin: 0 20px 0 0;
+        padding-top: 100px;
+    }
+    .btn-menu{
+        /*right: 20px;*/
+    }
+    .ctn-buscador{
+        margin: 0 30px;
+    }
+    .results-container{
+        justify-content: space-around;
+    }
+    .box-artista{
+        display: block;
+    }
+    .iframe{
+        text-align: center;
+    }
+    .youtube-video {
+        height: 500px;
+        width: 100%;
+    }
+    .box-info-artista{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .slider-fechas{
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .slider-fechas .slick-prev, 
+    .slider-fechas .slick-next{
+        /*background-color: #fff !important;*/
+        height: 48px !important;
+        top: 55%;
+        width: 20px !important;       
+    }
+    .slider-fechas .slick-next {
+        border: none; 
+        border-radius: 6px !important;
+        /* color: #fff; */
+        /* cursor: pointer; */
+        padding: 10px;
+        position: fixed;
+        right: 5%;
+        /* z-index: 20; */  
+        
+        background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/der.png) no-repeat;
+        background-size: 100%;
+    }
+    .slider-fechas .slick-prev{
+        border: none; 
+        border-radius: 6px !important;
+        left: 5%;
+        padding: 10px;
+        position: fixed;
+        right: inherit;
+
+        background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/izq.png) no-repeat;
+        background-size: 100%;
+    }
+        .slider-fechas .slick-next:before {
+            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/der.png) no-repeat;
+            background-size: 100%;
+            color: #fd5e53;
+            content: ' ';
+            display: block;
+            height: 48px !important;
+            margin-left: -10px;
+            margin-top: -10px;
+            width: 20px !important; 
+        }
+        .slider-fechas .slick-prev:before {
+            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/agenda-conciertos-peru-2023-multimedia-nndd/img/izq.png) no-repeat;
+            background-size: 100%;
+            content: ' ';
+            display: block;
+            height: 48px !important;
+            margin-left: -10px;
+            margin-top: -10px;            
+            width: 20px !important; 
+        }
+    .slider-fechas .slick-prev:before, 
+    .slider-fechas .slick-next:before{
+        font-size: 26px !important;
+    }
+
+    a.btn-home{
+        right: -15px;
+        z-index: 9999;
+    }
+    a.btn-mes{
+        /*bottom: 10px;
+        left: 0;*/
+        text-align: center;    
+    }
+
+    .box-opciones{
+        margin: 0 auto;
+        position: relative;
+        width: 90%;
+    }
+        .box-opciones .btn-menu{                     
+            margin: 0 auto;           
+            padding-bottom: 40px;
+            position: relative;   
+            right: inherit;
+            width: 100%;
+        }
+    
+    .slider-fechas .slick-slide {
+        text-align: inherit;
+    }
+
+}
+
+
+
+.gris img{
+    filter: grayscale(100%);
+}
+
+.tp-modal,
+#gpt_zocalo, 
+#browsi_wrapper_0_ai_1_rc_0,
+#browsi_wrapper_1_ai_1_rc_0,
+#browsi_wrapper_2_ai_1_rc_0,
+#browsi_wrapper_3_ai_1_rc_0,
+#browsi_wrapper_4_ai_1_rc_0,
+#browsi_wrapper_5_ai_1_rc_0,
+#browsi_wrapper_6_ai_1_rc_0,
+#browsi_wrapper_7_ai_1_rc_0,
+#browsi_wrapper_8_ai_1_rc_0,
+#browsi_wrapper_9_ai_1_rc_0,
+#browsi_wrapper_10_ai_1_rc_0,
+.fs-sticky-footer{
+    display: none !important;
+    height: 0 !important;
+} 
